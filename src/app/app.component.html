@@ -1,0 +1,19 @@
+<router-outlet></router-outlet>
+<div>
+  <div id="edad1">
+    <label for="campo1">Edad 1</label>
+    <input id="campo1" type="number" min="1" max="100" [(ngModel)]='edad1'>
+  </div>
+  <div id="edad2">
+    <label for="campo2">Edad 2</label>
+    <input id="campo2" type="number" min="1" max="100" [(ngModel)]='edad2'>
+  </div>
+  <div id="botones">
+    <button class="boton-calcular" (click)='calcular()'>Calcular Edad</button>
+    <button class="boton-limpiar" (click)='limpiar()'>Limpiar</button>
+  </div>
+  <div>
+    <label> promedio de edades: {{promedio}}<br></label>
+    <label>suma de edades: {{suma}}</label>
+  </div>
+</div>
